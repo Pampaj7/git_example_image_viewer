@@ -20,12 +20,14 @@ BitmapImage::~BitmapImage() {
 }
 
 bool BitmapImage::save(std::string name) {
-    //code
+
     return  true;
 }
 
 void BitmapImage::resize(int width, int hight) {
-    //cacca
-    this->height = hight;
-    this->width = width;
+    //cacca aggiornata
+    if (width > 0)
+        this->height = hight;
+    else
+        this->width = width;
 }
