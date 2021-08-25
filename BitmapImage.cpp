@@ -9,7 +9,7 @@ bool BitmapImage::load(std::string name) {
     std::string fileExt = name.substr(name.find_last_of(".") + 1);
     if (fileExt == "jpg") {
         // load image file
-        // decompress into buffer
+        // decompress into buffer + png
         return true;
     }
     return false;
