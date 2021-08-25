@@ -18,3 +18,14 @@ bool BitmapImage::load(std::string name) {
 BitmapImage::~BitmapImage() {
     delete[] buffer;
 }
+
+bool BitmapImage::save(std::string name) {
+    //code
+    return  true;
+}
+
+void BitmapImage::resize(int width, int hight) {
+    //cacca
+    this->height = hight;
+    this->width = width;
+}
