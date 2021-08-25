@@ -2,8 +2,10 @@
 
 #include "BitmapImage.h"
 
+#include "version.h"
+
 int main() {
-    std::cout << "Image viewer" << std::endl;
+    std::cout << "Image viewer - v."<< VERSION << std::endl;
     BitmapImage b;
     std::string imgName = "test.png";
     if (b.load(imgName)) {
